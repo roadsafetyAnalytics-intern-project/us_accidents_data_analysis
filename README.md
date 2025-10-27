@@ -89,12 +89,6 @@ This dataset contains over 4 million accident records encompassing attributes su
 
 ---
 
-<img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" style="height:64px;margin-right:32px"/>
-
-# Add few steps like download the dataset from this source, extract the dataset from zip and move to data folder in the project, after cloning, change the directory, like these.
-
-Here is the updated "Quick Load the App" section with detailed steps for downloading, extracting, and organizing the dataset:
-
 ### Quick Load the App 🚀
 
 To quickly launch the RoadSafe Analytics app, follow these complete steps:
@@ -165,33 +159,4 @@ streamlit run app.py
 ```
 
 The app will open automatically in your default web browser at `http://localhost:8501`. You can then interact with the dashboards and explore the accident data.
-
-**Note**: If you encounter any issues with the Kaggle download, you may need to:
-
-- Accept the dataset terms on Kaggle
-- Install the Kaggle CLI: `pip install kaggle`
-- Configure your API credentials following Kaggle's instructions
-- Download via command line: `kaggle datasets download -d sobhanmoosavi/us-accidents`[^1]
-<span style="display:none">[^2][^3][^4][^5][^6][^7][^8][^9]</span>
-
-<div align="center">⁂</div>
-
-[^1]: https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents
-
-[^2]: https://www.kaggle.com/datasets/jonbown/us-2020-traffic-accidents
-
-[^3]: https://www.kaggle.com/datasets/mlgodsiddharth/usa-accidents-dataset49-states-subset-of
-
-[^4]: https://www.kaggle.com/code/sarthakp18/us-accidents-exploratory-data-analysis
-
-[^5]: https://github.com/aadityasikder/us_accident_analysis
-
-[^6]: https://www.kaggle.com/datasets/sasikumarg/us-accidents
-
-[^7]: https://www.kaggle.com/datasets/usdot/nhtsa-traffic-fatalities
-
-[^8]: https://repository.rit.edu/theses/11904/
-
-[^9]: https://huggingface.co/datasets/nateraw/us-accidents
-
 
