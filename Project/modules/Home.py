@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 
 def run():
-    st.title("DV RoadSafe Analytics")
+    st.title("US RoadSafe Analytics")
     st.write("Analyze and visualize U.S. road accident trends to improve road safety awareness.")
     
     # Load full dataset directly
