@@ -6,7 +6,7 @@ import os
 # 1️⃣ Page Configuration (ONLY ONCE and AT THE TOP)
 # -----------------------------------------------------------
 st.set_page_config(
-    page_title="DV RoadSafe Analytics",
+    page_title="US RoadSafe Analytics",
     page_icon="🚗",
     layout="wide"
 )
@@ -31,7 +31,7 @@ if MODULES_DIR not in sys.path:
 # -----------------------------------------------------------
 # 4️⃣ Sidebar Navigation
 # -----------------------------------------------------------
-st.sidebar.title("🚦 DV RoadSafe Navigation")
+st.sidebar.title("🚦Navigation")
 st.sidebar.markdown("---")
 
 section = st.sidebar.radio(
@@ -95,7 +95,7 @@ except Exception as e:
 st.markdown("---")
 st.markdown("""
     <div style="text-align: center; color: #888; font-size: 12px; margin-top: 20px;">
-        <p>🚗 <b>DV RoadSafe Analytics</b> | US Accidents Data Analysis & Preprocessing</p>
-        <p>Built with Streamlit | Data Science Project</p>
+        <p>🚗 <b>US RoadSafe Analytics</b> | US Accidents Data Analysis & Preprocessing</p>
+        <p>Built with Streamlit | Infosys Intern Project</p>
     </div>
 """, unsafe_allow_html=True)
