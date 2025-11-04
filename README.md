@@ -88,3 +88,74 @@ This dataset contains over 4 million accident records encompassing attributes su
 3. **Communication Quality:** Clarity, structure, and comprehensiveness of the written documentation and effectiveness of presentations with visual aids  
 
 ---
+
+### Quick Load the App 🚀
+
+To quickly launch the RoadSafe Analytics app, follow these complete steps:
+
+1. **Clone the Repository:**
+```bash
+git clone https://github.com/roadsafetyAnalytics-intern-project/us_accidents_data_analysis.git
+cd us_accidents_data_analysis/Project
+```
+
+2. **Download the Dataset:**
+
+- Visit the dataset page: [US Accidents (2016-2023) on Kaggle](https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents)
+- Click "Download" (you'll need to sign in to Kaggle)
+- The dataset will download as a ZIP file named `US_Accidents.csv.zip`
+
+3. **Extract and Organize the Dataset:**
+```bash
+# Create data directory if it doesn't exist
+mkdir -p data
+
+# Extract the ZIP file (on Windows, you may need to use a tool like 7-Zip or extract manually)
+# On macOS/Linux, use:
+unzip US_Accidents.csv.zip -d data/
+
+# Or if the ZIP file is in another location, specify the path:
+# unzip ~/Downloads/US_Accidents.csv.zip -d data/
+```
+
+4. **Set Up the Python Environment:**
+
+Create and activate a virtual environment (recommended):
+
+```bash
+python -m venv venv
+
+# On Windows:
+venv\Scripts\activate
+
+# On macOS/Linux:
+source venv/bin/activate
+```
+
+5. **Install Dependencies:**
+```bash
+pip install -r requirements.txt
+```
+
+6. **Verify Data Placement:**
+
+Ensure your project structure looks like this:
+
+```
+Project/
+├── app.py
+├── requirements.txt
+├── data/
+│   └── US_Accidents.csv
+└── ...
+```
+
+7. **Launch the App:**
+
+Run the following command to start the Streamlit dashboard:
+
+```bash
+streamlit run app.py
+```
+
+The app will open automatically in your default web browser at `http://localhost:8501`. You can then interact with the dashboards and explore the accident data.
