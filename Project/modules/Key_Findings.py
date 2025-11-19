@@ -11,9 +11,16 @@ def run():
     st.subheader("Summary Metrics")
     col1, col2, col3 = st.columns(3)
     col1.metric("Total Accidents Analyzed", f"{len(df):,}")
+    # if 'Hour' in df.columns:
+    #     peak_hour = df['Hour'].mode()[0]
+    #     col2.metric("Peak Accident Hour", peak_hour)
+
+    from datetime import datetime
     if 'Hour' in df.columns:
         peak_hour = df['Hour'].mode()[0]
-        col2.metric("Peak Accident Hour", peak_hour)
+        peak_hour_am_pm = datetime.strptime(str(peak_hour), "%H").strftime("%I %p").lstrip('0') 
+        col2.metric("Peak Accident Hour", peak_hour_am_pm)
+
     else:
         col2.warning("Hour column missing")
     if 'Severity' in df.columns:
